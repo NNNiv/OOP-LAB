@@ -19,16 +19,13 @@ public class MaxOfThreeNested {
         if ((x > y)) {
             if (x > z) {
                 return x;
-            }
-            else {
+            } else {
                 return z;
             }
-        }
-        else {
+        } else {
             if (y > z) {
                 return y;
-            }
-            else {
+            } else {
                 return z;
             }
         }
