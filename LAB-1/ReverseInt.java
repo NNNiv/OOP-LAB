@@ -12,8 +12,7 @@ public class ReverseInt {
 
         if (reverse(n) == n) {
             System.out.println(n + " is a Palindrome");
-        }
-        else {
+        } else {
             System.out.println(n + " is not a Palindrome");
         }
 
