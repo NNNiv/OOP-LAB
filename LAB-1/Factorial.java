@@ -16,6 +16,7 @@ public class Factorial {
         System.out.println("The factorial of " + n + " is " + factorial(n));
 
         System.out.println("nCr: " + (factorial(n) / (factorial(r) * factorial(n - r))));
+        sc.close();
     }
     public static int factorial(int n) {
         

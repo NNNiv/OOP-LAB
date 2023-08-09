@@ -15,6 +15,7 @@ public class ReverseInt {
         } else {
             System.out.println(n + " is not a Palindrome");
         }
+        sc.close();
 
     }
     public static int reverse(int n) {
