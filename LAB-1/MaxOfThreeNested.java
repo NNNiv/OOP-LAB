@@ -16,7 +16,7 @@ public class MaxOfThreeNested {
     }
 
     public static int max(int x, int y, int z) {
-        if ((x > y)) {
+        if (x > y) {
             if (x > z) {
                 return x;
             } else {
