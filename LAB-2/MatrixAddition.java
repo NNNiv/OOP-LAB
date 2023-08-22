@@ -12,19 +12,16 @@ public class MatrixAddition {
 		System.out.println("Enter the order of the matrix (n): ");
 		n = sc.nextInt();
 		
-		int element;
 		System.out.println("Enter the elements of first matrix: ");
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
-				element = sc.nextInt();
-				matOne[i][j] = element;
+				matOne[i][j] = sc.nextInt();
 			}
 		}
 		System.out.println("Enter the elements of second matrix: ");
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
-				element = sc.nextInt();
-				matTwo[i][j] = element;
+				matTwo[i][j] = sc.nextInt();
 			}
 		}
 		sc.close();

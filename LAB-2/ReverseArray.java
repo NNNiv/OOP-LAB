@@ -5,7 +5,6 @@ public class ReverseArray {
 	public static void main(String[] args) {
 		int[] arr = new int[10];
 		int n;
-		int element;
 		int start, end;
 
 		Scanner sc = new Scanner(System.in);
@@ -14,8 +13,7 @@ public class ReverseArray {
 		
 		System.out.println("Enter the elements: ");
 		for (int i = 0; i < n; i++) {
-			element = sc.nextInt();
-			arr[i] = element;
+			arr[i] = sc.nextInt();
 		}
 
 		sc.close();

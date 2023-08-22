@@ -18,7 +18,6 @@ public class PrimeArray {
 	public static void main(String[] args) {		
 		int[] arr = new int[10];
 		int n;
-		int element;
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number of elements (max 10): ");
@@ -26,8 +25,7 @@ public class PrimeArray {
 		
 		System.out.println("Enter the elements: ");
 		for (int i = 0; i < n; i++) {
-			element = sc.nextInt();
-			arr[i] = element;
+			arr[i] = sc.nextInt();
 		}
 		sc.close();
 
