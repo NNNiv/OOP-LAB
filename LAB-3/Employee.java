@@ -35,7 +35,7 @@ public class Employee {
     void computeNetSal() {
         da = 0.52 * basic;
         grossSalary = basic + da;
-        netSalary = basic + da + grossSalary;
+        netSalary = 0.7 * grossSalary;
     }
 
     public static void main(String[] args) {
