@@ -6,7 +6,7 @@ public class Employee {
     int basic;
     double da;
     double grossSalary;
-    int netSalary;
+    double netSalary;
 
     void read() {
         Scanner sc = new Scanner(System.in);
@@ -21,17 +21,21 @@ public class Employee {
         basic = sc.nextInt();
         sc.close();
     }
+
     void display() {
         System.out.println("Employee name: " + eName);
         System.out.println("Employee ID: " + eID);
         System.out.println("Employee basic pay: " + basic);
         System.out.println("Employee DA: " + da);
         System.out.println("Employee gross salary: " + grossSalary);
+        System.out.println("Employee net salary: " + netSalary);
+
     }
 
     void computeNetSal() {
         da = 0.52 * basic;
         grossSalary = basic + da;
+        netSalary = basic + da + grossSalary;
     }
 
     public static void main(String[] args) {
@@ -39,6 +43,5 @@ public class Employee {
         obj.read();
         obj.computeNetSal();
         obj.display();
-   }
+    }
 }
-
