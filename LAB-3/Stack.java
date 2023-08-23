@@ -12,9 +12,10 @@ public class Stack {
     void push(int item) {
         if (tos >= arr.length - 1)
             System.out.println("Stack Overflow");
-        else
+        else {
             arr[++tos] = item;
-        System.out.println("Pushed " + item + " to the stack");
+            System.out.println("Pushed " + item + " to the stack");
+        }
     }
 
     void pop() {
