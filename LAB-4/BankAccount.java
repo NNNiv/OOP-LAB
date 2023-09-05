@@ -11,6 +11,9 @@ public class BankAccount {
 	
 	// Default Constructor
 	public BankAccount() {
+    assign();
+	}
+  void assign() {
 		System.out.println("Created new bank account");
 		
 		Scanner sc = new Scanner(System.in);
@@ -21,8 +24,10 @@ public class BankAccount {
 		System.out.println("Enter account type: ");
 		accountType = sc.next();
 		System.out.println("Enter account balance: ");
-		balance = sc.nextDouble();
-	}
+    balance = sc.nextDouble();
+		System.out.println("Enter rate: ");
+    rate = sc.nextDouble();
+  }
 	
 	// Parameterized Constructor
 	public BankAccount(String name, int accNum, String accType, double accBalance, double accRate) {
@@ -76,27 +81,29 @@ public class BankAccount {
 				System.out.println("Enter amount to deposit: ");
 				amount = sc.nextInt();
 				acc1.deposit(amount);
-				break;
+        continue;
 			
 			case 2:
 				System.out.println("Enter amount to withdraw: ");
 				amount = sc.nextInt();
 				acc1.withdraw(amount);
-				break;
+        continue;
+
 			case 3:
 				acc1.displayDetails();
-				break;
+        continue;
+
 			case 4:
 				displayRate();
-				break;
-			case 5:
-				break;
+        continue;
+        
+      case 5:
+        break;
 			}
-			break;
+      break;
 		}
 		
 		System.out.println();
-		
 		System.out.println("Demonstrating parameterized constructors");
 		BankAccount acc2 = new BankAccount("Joe", 1221, "Savings", 10000, 0.5);
 		while (true) {
@@ -110,19 +117,19 @@ public class BankAccount {
 				System.out.println("Enter amount to deposit: ");
 				amount = sc.nextInt();
 				acc2.deposit(amount);
-				break;
+        continue;
 			
 			case 2:
 				System.out.println("Enter amount to withdraw: ");
 				amount = sc.nextInt();
 				acc2.withdraw(amount);
-				break;
+        continue;
 			case 3:
 				acc2.displayDetails();
-				break;
+        continue;
 			case 4:
 				displayRate();
-				break;
+        continue;
 			case 5:
 				break;
 			}
