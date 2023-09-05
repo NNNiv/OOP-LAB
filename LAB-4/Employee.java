@@ -11,6 +11,7 @@ public class Employee {
     // Default Constructor
     public Employee() {
         assign();
+        computeNetSal();
     }
 
     void assign() {
@@ -26,7 +27,6 @@ public class Employee {
         System.out.println("Enter basic pay: ");
         basic = sc.nextInt();
 
-        computeNetSal();
         sc.close();
     }
 
