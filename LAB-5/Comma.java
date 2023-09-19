@@ -1,5 +1,3 @@
-package lab_5;
-
 public class Comma {
 	public String comma(String str) {
 		String formattedNumber = new String();
