@@ -121,7 +121,7 @@ public class StudentRecord {
     		for (int i = 0; i < n; i++) {
     			System.out.println("Enter student admission number: ");
     			int adminNo = sc.nextInt();
-				sc.nextLine();
+				sc.nextLine(); // Consume the newline character
     			System.out.print("Enter Student name: ");
     			String name = sc.nextLine();
     			System.out.println("Enter date of joining (DD/MM/YYYY): ");
