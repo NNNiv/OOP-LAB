@@ -136,11 +136,11 @@ public class Student {
         		System.out.println(name);
         }
 
-    	/*
+    
     	int[] marks = { 10, 11 };
         Student obj = new Student("Nived Mohan", marks);
         System.out.println(obj.extractInitials());
         System.out.println(obj.removeWhitespace());
-        */
+      
     }
 }
