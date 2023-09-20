@@ -117,7 +117,7 @@ public class StudentRecord {
 		n = sc.nextInt();
 
 		// Create record of 5 students
-		if (n < 2)
+		if (n < 5)
 			System.out.println("Please enter a minimum of 5 records");
 		else {
 			StudentRecord[] record = new StudentRecord[n];
