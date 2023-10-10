@@ -1,5 +1,3 @@
-package lab_6_employee;
-
 import java.util.Scanner;
 
 class Employee {
