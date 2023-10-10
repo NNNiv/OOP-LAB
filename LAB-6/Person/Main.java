@@ -39,7 +39,9 @@ class CollegeGraduate extends Person {
     yearOfGrad = sc.nextInt();
   }
 
-  CollegeGraduate(int gpa, int yearOfGrad) {
+  CollegeGraduate(String name, String dob, int gpa, int yearOfGrad) {
+    this.name = name;
+    this.dob = dob;
     this.gpa = gpa;
     this.yearOfGrad = yearOfGrad;
   }
